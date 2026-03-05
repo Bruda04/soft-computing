@@ -10,10 +10,10 @@ This repository contains three practical exercises for the course "Soft Computin
 
 This exercise implements an Optical Character Recognition (OCR) pipeline for reading handwritten or printed text from images. The system:
 
-- **Preprocesses** images (grayscale, deskew, binarize, erode/dilate)
-- **Segments** individual characters via contour detection and region merging
-- **Trains** a fully-connected Artificial Neural Network (ANN) on the segmented characters
-- **Predicts** text for each image and evaluates using a Hamming-based distance metric
+- **Preprocess Images** – Convert to grayscale, deskew, binarize, and apply morphological operations (erode/dilate).
+- **Segment Characters** – Detect contours and merge regions to isolate individual characters.
+- **Train Neural Network** – Use a fully-connected Artificial Neural Network (ANN) on the segmented characters.
+- **Predict and Evaluate** – Recognize text for each image and evaluate accuracy using a Hamming distance metric.
 
 **Dataset:**
 
@@ -27,11 +27,11 @@ This exercise implements an Optical Character Recognition (OCR) pipeline for rea
 
 **Folder:** `paw_patrol_bone_counter/`
 
-This exercise focuses on detecting and counting bones in video frames using image processing and neural networks. The pipeline:
+This exercise focuses on detecting and counting bones in video frames using image processing. The pipeline:
 
-- Processes video frames to detect bone-like shapes
-- Applies segmentation and feature extraction
-- Trains a neural network to count bones in each frame
+- **Select Region of Interest (ROI)** – Identify the specific area in the image to process.
+- **Apply Image Manipulation Techniques** – Perform preprocessing such as filtering, thresholding, or contrast adjustment.
+- **Hough Transform for Circle Detection** – Use the Hough Circle Transform to detect circular features.
 
 **Dataset:**
 
@@ -47,9 +47,9 @@ This exercise focuses on detecting and counting bones in video frames using imag
 
 This exercise aims to detect and count coins in Super Mario game screenshots. The workflow includes:
 
-- Preprocessing images to highlight coins
-- Segmenting and extracting coin regions
-- Using a neural network to count and classify coin values
+- **Preprocess Images** – Enhance and highlight coins using techniques such as filtering, thresholding, or color masking.
+- **Segment and Extract Coin Regions** – Identify individual coin regions from the background.
+- **Count Coins and Apply Weights** – Count the detected coin regions and multiply by their corresponding values/weights to get the total score.
 
 **Dataset:**
 
